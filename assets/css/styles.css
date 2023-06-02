@@ -1,129 +1,314 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+* {
+    box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 28px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-2 {
+    --line-clamp: 2;
+}
+
+.line-3 {
+    --line-clamp: 3;
+}
+
+.line-4 {
+    --line-clamp: 4;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    color: transparent;
+    padding: 20px 41px;
+    min-width: 186px;
+    cursor: pointer;
+    background: #1ebfc1;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.cusor {
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    background: #fff;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -50px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 0 8px;
+}
+
+.header .nav ul {
+    display: flex;
+}
+
+.header .nav .nav-item {
+    margin-left: 39px;
+}
+
+.header .nav .nav-item:first-child {
+    margin-left: 39px;
+}
+
+.header .nav .nav-item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #2f3a3b;
+}
+
+.header .nav .nav-item:hover {
+    color: #1ebfc1;
+}
+
+.header .btn-header {
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+    padding: 12px 24px;
+    min-width: 108px;
+
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #494949;
+}
+
+.header .btn-header:hover {
+    border: 1px solid #1ebfc1;
+    border-radius: 6px;
+    color: #1ebfc1;
+}
+
+/* Hero */
+.hero {
+    margin-top: 50px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+}
+
+.hero .left-section {
+    width: 50.8%;
+}
+
+.hero .left-section .desc-1 {
+    font-size: 1.4rem;
+    color: #767e7e;
+}
+
+/* .hero .left-section .desc-1::before {
+    content: "";
+    background: url(/assets/logo/right-arrow.svgx);
+} */
+
+.hero .left-section .heading {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.16;
+    color: #0d1111;
+    width: 458px;
+}
+
+.hero .left-section .desc-2 {
+    margin-top: 46px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9da6a5;
+    width: 374px;
+}
+
+.hero .left-section .button-item {
+    margin-top: 52px;
+}
+
+.hero .button-item .ctn-hero {
+    margin-left: 50px;
+    border: none;
+    background-color: transparent;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero .button-item .ctn-hero:hover {
+    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.05);
+}
+
+.hero .image-content {
+    position: relative;
+    display: block;
+    width: 49.2%;
+}
+
+.hero .image-content .image {
+    object-fit: cover;
+    width: 576px;
+    height: 631px;
+}
+
+.hero .courses {
+    position: absolute;
+    top: 149px;
+    left: -43px;
+    display: flex;
+    align-items: center;
+    width: 157px;
+    height: 75px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.hero .courses .image-list .book {
+    position: absolute;
+    top: 17px;
+    left: 25px;
+}
+
+.hero .courses .image-list .book-rec {
+    position: absolute;
+    top: 45px;
+    left: 29px;
+}
+
+.hero .courses .desc {
+    position: absolute;
+    right: 25px;
+    margin-left: 16px;
+    width: 55px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.hero .schedules {
+    position: absolute;
+    top: 453px;
+    left: -62px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 124px;
+    height: 132px;
+    background: #fff;
+    box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.hero .schedules .image-list {
+    margin-bottom: 25px;
+}
+
+.hero .schedules .image-items {
     display: block;
 }
-body {
-    line-height: 1;
+
+.hero .schedules .image-items:nth-child(2) {
+    margin-top: 12px;
 }
-ol,
-ul {
-    list-style: none;
+
+.hero .schedules .image-items:nth-child(3) {
+    margin-top: 10px;
 }
-blockquote,
-q {
-    quotes: none;
+
+.hero .schedules .image-items:nth-child(4) {
+    margin-top: 16px;
+    margin-left: 24px;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
+
+.hero .schedules .desc {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+
+.hero .students {
+    position: absolute;
+    top: 500px;
+    right: 45px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 207px;
+    height: 90px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.hero .students .image-items {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero .students .image-list {
+    margin-bottom: 17px;
+    margin-left: 35px;
+}
+
+.hero .students .image-items + .image-items {
+    margin-left: -7px;
+}
+
+.hero .students .desc {
+    margin: 17px 35px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0d1111;
 }
