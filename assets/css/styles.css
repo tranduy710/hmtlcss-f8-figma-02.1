@@ -126,7 +126,7 @@ a {
 
 /* Hero */
 .hero {
-    margin-top: 50px;
+    padding: 50px 0 79px;
 }
 
 .hero-content {
@@ -311,4 +311,243 @@ a {
     font-size: 1rem;
     line-height: 1.5;
     color: #0d1111;
+}
+
+/* Features */
+.features {
+    padding: 130px 0;
+}
+
+.features .main-content {
+    width: 1024px;
+}
+
+.features .desc-1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.features .heading {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.33;
+    color: #0d1111;
+    width: 577px;
+}
+
+.features .desc-2 {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #767e7e;
+    width: 590px;
+}
+
+.features .row {
+    display: flex;
+    margin-top: 80px;
+}
+
+.features .row .sub-heading {
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+/* 37 42 21 */
+.features .item:nth-child(1) {
+    width: 37%;
+}
+
+.features .item:nth-child(2) {
+    /* margin-left: 209px; */
+    width: 42%;
+}
+
+.features .item:nth-child(3) {
+    /* margin-left: 200px; */
+    width: 21%;
+}
+
+.features .item .desc-3 {
+    width: 178px;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.69;
+    color: #9da6a5;
+}
+
+.features .item:nth-child(2) .desc-3 {
+    width: 226px;
+}
+
+.features .item:nth-child(3) .desc-3 {
+    width: 226px;
+}
+
+/* Courses */
+.courses {
+}
+
+.courses .desc-1 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .heading {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.courses .row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses .desc-2 {
+    margin-top: 19px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #767e7e;
+    width: 525px;
+}
+
+.courses .ctn-course {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    color: #1ebfc1;
+}
+
+.courses .row-2 {
+    margin-top: 79px;
+    display: flex;
+    gap: 47px;
+    justify-content: space-between;
+}
+
+.courses .row-2 .item {
+    position: relative;
+}
+
+.courses .item .image {
+    width: 359px;
+    height: 393px;
+    object-fit: cover;
+    opacity: 0.75;
+    border-radius: 8px;
+}
+
+.courses .item .content-image {
+    background: #fff;
+    position: absolute;
+    width: 325px;
+    top: 322px;
+    left: 17px;
+    padding: 18px 25px 29px;
+    box-shadow: 0px 16px 90px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.courses .content-image .sub-heading {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.courses .content-image .desc-3 {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #767e7e;
+}
+
+.courses .desc-3 strong {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.courses .desc-4 {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9da6a5;
+}
+
+.courses .row-3 {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.courses .sub-item {
+    position: relative;
+}
+
+.courses .row-3 .sub-item:nth-child(1) {
+    margin-left: 16px;
+}
+
+.courses .row-3 .sub-item:nth-child(2) {
+    margin-left: 26px;
+}
+
+.courses .row-3 .sub-item::before {
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: 5px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
+}
+
+/* Figures */
+.figures {
+    margin-top: 265px;
+}
+
+.figures .main-content {
+    width: 862px;
+    /* margin: 0 auto; */
+}
+
+.figures .figure-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.figures .figure-content .figure-heading {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #0d1111;
+}
+
+.figures .figure-content .desc {
+    margin-top: 11px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #767e7e;
 }
